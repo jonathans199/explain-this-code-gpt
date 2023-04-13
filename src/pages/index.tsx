@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Head from 'next/head'
+import Image from 'next/image'
 import { Inter } from 'next/font/google'
 
 import Editor from '@monaco-editor/react'
@@ -94,7 +95,8 @@ export default function Home() {
 									<div className='flex justify-center'>
 										<button
 											className='block w-full rounded bg-red-600 px-12 py-3 my-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto'
-											type='submit'>
+											type='submit'
+											disabled={loading}>
 											Explain
 										</button>
 										<button
@@ -116,6 +118,20 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
+					<a
+						href='https://github.com/jonathans199/explain-this-code-gpt'
+						target='_blank'
+						rel='noopener noreferrer'
+						className='flex justify-center'>
+						<Image src='/github-mark.png' alt='' width={20} height={20} />
+					</a>
+					<footer className='flex justify-center items-center font-light text-red-700 text-xs mb-3'>
+						by&nbsp;
+						<a href='http://www.jonathansanchez.dev' target='_blank' rel='noopener noreferrer'>
+							jonathansanchez.dev
+						</a>
+						{/* <Image src='/jons-logo.png' alt='' width={20} height={20} /> */}
+					</footer>
 				</section>
 			</main>
 		</>

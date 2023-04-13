@@ -1,56 +1,23 @@
 # Explain This Code 😎
-Application to help any level of developers to get a further explanation on code.
 
-Just past code and the app will explain what it does. 
+Explain This Code, is a web-based application that uses artificial intelligence to explain lines of
+programming code. 
 
-## Getting Started
-----------
+It is a valuable tool for developers of all levels of experience, from beginners
+learning new programming languages to experienced developers debugging code.
 
-## Set up Next.js project
+![Screenshot](./screenshot.png)
 
-```bash
-# create Next.js app to be used with Typescript and Eslint template
-$ npx create-next-app@latest PROJECT-NAME --typescript --eslint
+## Benefits:
 
-$ cd PROJECT-NAME
+Reduced time to understand code: Explain Code can help you understand code faster by providing clear and concise explanations of each line. This can save you time and help you focus on other tasks, such as debugging or writing new code.
 
-# install tailwind, postcss, autoprefixer
-$ npm install -D tailwindcss postcss autoprefixer
+Improved code quality: When you understand the code you're writing, you're less likely to make mistakes. This can lead to higher-quality code that is less likely to have bugs.
 
-# Initialize tailwind
-$ npx tailwindcss init -p
-```
+## Technologies used
 
-## Configure Tailwind with Next js project 
-
-```javascript 
-// in tailwind.config.js
-
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
- 
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
-```
-
-## add Tailwind directive to CSS
-
-```css
-/* globals.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-Reference [here](https://tailwindcss.com/docs/guides/nextjs)
+- Next.js 
+- React.js
+- Tailwind
+- Typescript
+- Openai - API to interact with Chat GPT
