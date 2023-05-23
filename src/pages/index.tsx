@@ -1,11 +1,8 @@
 import * as React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 
 import Editor from '@monaco-editor/react'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 	const [loading, setLoading] = React.useState<boolean>(false)
